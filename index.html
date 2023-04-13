@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </script>
+
+    <title>Sumanth personal Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav class="navbar">
+
+                <img src="./sel2img.png" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header" class="menu-btn">Home</a></li>
+                    <li><a href="#about" class="menu-btn">About</a></li>
+                    <li><a href="#portfolio" class="menu-btn">Portfolio</a></li>
+                    <li><a href="#contact" class="menu-btn">contact</a></li>
+                    <i class="fa-solid fa-xmark" id="icon" onclick="closemenu()" style="color:rgb(252, 235, 138)"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" id="icon" onclick="openmenu()" style="color:rgb(181, 250, 212)"></i>
+
+                </nav>
+                <hr style="height:1px;border-width:0;color:#242323;background-color:#242323">
+
+            <div class="header-text">
+                <p style="color:rgb(253, 238, 153)">FrontEnd/Softwate Tester</p>
+                <h1>
+                    Hello there I'm<br> <span> Sumanth Muktam</span><br>from Anantapur
+                </h1>
+            </div>
+        </div>
+    </div>
+<!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1">
+                    <img src="./dp1-removebg-preview.jpg" alt="img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                                 <hr style="height:1px;border-width:0;color:#242323;background-color:#242323; margin-bottom: 10px;">
+
+                    <p style="color:rgb(105, 106, 107)">As a web developer, having a well-curated portfolio is crucial to showcase your skills, experience, and projects to potential clients or employers. Your portfolio is your online presence, and it serves as a reflection of your abilities and style as a web developer. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link " onClick="opentab('Skills')">Skills</p>
+                        <p class="tab-links active-link" onClick="opentab('Projects')">Projects</p>
+                        <p class="tab-links active-link" onClick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Developement</span><br>Designing web apps and interfaces</li><br>
+                            <li><span>Software Testing</span><br>Knowledege on both <br>Automation and Manual testing
+                            <li><br>
+                            <li><span>Python</span><br>Knowledege on OOPS concepts </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Projects">
+
+                        <ul>
+                            <li><span>Coffee Junkie E-commerce Website</span> <br>Using Html css and js</li>
+                            <li><span>Portfolio</span><br> HTML, Css and Js , Xsl </li>
+                            <li><span> To-Do list</span><br>Using HTML, Css and Js </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>2017-2021 Graduation</span><br> Sri Krishnadevaraya University</li>
+                            <li><span> 2015-2017 Board Of Intermediate Education</span><br> Sri Sai Baba National
+                                College </li>
+                            <li> <span> 2014-2015 Board Of Secondary Education</span><br> Sri Sai Vidyanikethan </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="subtitle">
+            <h1 class="sub-title">My Work</h1>
+            <hr style="height:1px;border-width:0;color:#242323;background-color:#242323">
+            <div class="worklist">
+                <div class="work">
+                    <img src="./portfolio.jpg" alt="portfolio website">
+                    <div class="layer">
+                        <h3 style="color:rgb(209, 245, 155)"> Portfolio Website</h3>
+                        <p class="para">The website is about the coffee junkie website</p>
+
+                        <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./coffee.jpg" alt="coffee-junkie">
+                    <div class="layer">
+                    <h3 style="color:rgb(209, 245, 155)">Coffee Junkie Website</h3>
+                        <p class="para">The website is about the coffee junkie website</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="./To-do.jpg" alt="To-Do">
+                    <div class="layer">
+                    <h3 style="color:rgb(209, 245, 155)">To Do list</h3>
+                        <p class="para">The project is about the list of works items to do</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!----Contanct-->
+
+    <div id="contact">
+        <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" >Contact me</h1>
+                <hr style="height:1px;border-width:0;color:#242323;background-color:#242323; margin-bottom: 10px;">
+            <p class="mail"><i class='fas fa-paper-plane'></i> Sumanth1391@gmail.com</p>
+            <p class="mail"><i class='fas fa-phone'></i>
+                9398808089</p><br>
+            <div class="social-icons">
+                <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""> <i class="fa-brands fa-instagram"></i></a>
+                <a href=""> <i class="fa-brands fa-github"></i></i></a>
+                <a href=""> <i class="fa-brands fa-square-twitter"></i></a>
+
+            </div>
+            <a href="./Resumeport.pdf" download class="btn btn2">Download Cv</a>
+
+            </div>
+            <div class="contact-right">
+
+            <form name="submit-to-google-sheet">
+                <h1 style="color: #ff5563;">Your Details</h1>
+                <hr style="height:1px;border-width:0;color:#242323;background-color:#242323; margin-bottom: 10px;">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your E-mail" required>
+                <textarea name="Message" rows="3" placeholder="Your Message"></textarea><br>
+                <button type="submit" class="btn btn2">Submit</button>
+
+            </form><br><br>
+
+            <span id="message"></span>
+
+            </div>
+
+        </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Sumanth. Made with <i class="fa fa-heart" id="hrt"></i></p>
+        </div>
+        </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+
+sidemenu.style.right = "-200px"
+}
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxYv4LplosZY1ZjEhL0oP0G8hA_O6TO0DyEHcof9-IwwvaK2iGpkbjUTvEnIVhTdURjXg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const message=document.getElementById("message")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            message.innerHTML ="Sent successfully!!"
+            setTimeout(function(){
+                message.innerHTML =""
+            },5000)
+            form.reset()
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
