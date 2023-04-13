@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
     <title>Sumanth personal Portfolio</title>
 </head>
@@ -30,15 +30,15 @@
                     <li><a href="#about" class="menu-btn">About</a></li>
                     <li><a href="#portfolio" class="menu-btn">Portfolio</a></li>
                     <li><a href="#contact" class="menu-btn">contact</a></li>
-                    <i class="fa-solid fa-xmark" id="icon" onclick="closemenu()" style="color:rgb(252, 235, 138)"></i>
+                    <i class="fa-solid fa-xmark" id="icon" onclick="closemenu()" style="color:#a3b86c;"></i>
 
                 </ul>
-                <i class="fa-solid fa-bars" id="icon" onclick="openmenu()" style="color:rgb(181, 250, 212);margin: right 20px"></i>
+                <i class="fa-solid fa-bars" id="icon" onclick="openmenu()" style="color:#a3b86c;;margin: right 20px"></i>
 
                 </nav>
                 <hr style="height:1px;border-width:0;color:#242323;background-color:#242323">
 
-            <div class="header-text">
+            <div class="header-text" data-aos="fade-left">
                 <p style="color:rgb(253, 238, 153)">FrontEnd | Software Tester</p>
                 <h1>
                     Hello there I'm<br> <span> Sumanth Muktam</span><br>from Anantapur
@@ -47,7 +47,7 @@
         </div>
     </div>
 <!-- about -->
-    <div id="about" >
+    <div id="about" data-aos="flip-left" >
         <div class="container">
             <div class="row">
 
@@ -97,13 +97,13 @@
         </div>
     </div>
     <!-- portfolio -->
-    <div id="portfolio"  data-aos="flip-left">
+    <div id="portfolio"  data-aos="zoom-in">
         <div class="subtitle">
             <h1 class="sub-title">My Work</h1>
-            <hr style="height:1px;border-width:0;color:#242323;background-color:#242323">
+            <hr style="height:1px;border-width:0;color:#242323;background-color:#242323"><br>
             <div class="worklist">
-                <div class="work">
-                    <img src="./portfolio.jpg" alt="portfolio website">
+                <div class="work"  data-aos="fade-up-right">
+                    <img src="./portfolio.jpg" alt="portfolio website"><br>
                     <div class="layer">
                         <h3 style="color:rgb(209, 245, 155)"> Portfolio Website</h3>
                         <p class="para">The website is about the coffee junkie website</p>
@@ -113,7 +113,7 @@
                 </div>
 
                 <div class="work">
-                    <img src="./coffee.jpg" alt="coffee-junkie">
+                    <img src="./coffee.jpg" alt="coffee-junkie"  data-aos="zoom-in">
                     <div class="layer">
                     <h3 style="color:rgb(209, 245, 155)">Coffee Junkie Website</h3>
                         <p class="para">The website is about the coffee junkie website</p>
@@ -121,8 +121,8 @@
                     </div>
 
                 </div>
-                <div class="work">
-                    <img src="./To-do.jpg" alt="To-Do">
+                <div class="work" >
+                    <img src="./To-do.jpg" alt="To-Do" data-aos="zoom-in">
                     <div class="layer">
                     <h3 style="color:rgb(209, 245, 155)">To Do list</h3>
                         <p class="para">The project is about the list of works items to do</p>
@@ -140,9 +140,9 @@
     <div id="contact">
         <div class="container">
         <div class="row">
-            <div class="contact-left">
+            <div class="contact-left"data-aos="fade-right">
                 <h1 class="sub-title" >Contact me</h1>
-                <hr style="height:1px;border-width:0;color:#242323;background-color:#242323; margin-bottom: 10px;">
+                <hr style="height:1px;border-width:0;color:#242323;background-color:#242323; margin-bottom: 10px; width:207px ;margin-left:0px">
             <p class="mail"><i class='fas fa-paper-plane'></i> Sumanth1391@gmail.com</p>
             <p class="mail"><i class='fas fa-phone'></i>
                 9398808089</p><br>
@@ -156,11 +156,11 @@
             <a href="./Resumeport.pdf" download class="btn btn2">Download Cv</a>
 
             </div>
-            <div class="contact-right">
+            <div class="contact-right" data-aos="fade-left">
 
             <form name="submit-to-google-sheet">
-                <h1 style="color: #ff5563;">Your Details</h1>
-                <hr style="height:1px;border-width:0;color:#242323;background-color:#242323; margin-bottom: 10px;">
+                <h1 style="color: #a3b86c;">Your Details</h1>
+                <hr style="height:1px;border-width:0;color:#242323;background-color:#242323; margin-bottom: 10px;    width: 200px;">
                 <input type="text" name="Name" placeholder="Your Name" required>
                 <input type="email" name="Email" placeholder="Your E-mail" required>
                 <textarea name="Message" rows="3" placeholder="Your Message"></textarea><br>
@@ -196,7 +196,10 @@
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <script>
-     AOS.init();
+     AOS.init({
+        offset: 300,
+        duration: 1400
+     } );
    </script>
     <script>
         var sidemenu = document.getElementById("sidemenu");
