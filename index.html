@@ -10,19 +10,22 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="https://unpkg.com/aos@2.3.1/dist/aos.css">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </script>
 
     <title>Sumanth personal Portfolio</title>
 </head>
 
 <body>
-    <div id="header">
+    <div data-aos="fadeup" id="header">
 
         <div class="container">
             <nav class="navbar">
-
+                <div data-aos="fade-right">
                 <img src="./sel2img.png" class="logo">
+
+                </div>
 
                 <ul id="sidemenu">
                     <li><a href="#header" class="menu-btn">Home</a></li>
@@ -38,7 +41,7 @@
                 <hr style="height:1px;border-width:0;color:#242323;background-color:#242323">
 
             <div class="header-text">
-                <p style="color:rgb(253, 238, 153)">FrontEnd/Softwate Tester</p>
+                <p style="color:rgb(253, 238, 153)">FrontEnd | Software Tester</p>
                 <h1>
                     Hello there I'm<br> <span> Sumanth Muktam</span><br>from Anantapur
                 </h1>
@@ -60,8 +63,8 @@
                     <p style="color:rgb(105, 106, 107)">As a web developer, having a well-curated portfolio is crucial to showcase your skills, experience, and projects to potential clients or employers. Your portfolio is your online presence, and it serves as a reflection of your abilities and style as a web developer. </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link " onClick="opentab('Skills')">Skills</p>
-                        <p class="tab-links active-link" onClick="opentab('Projects')">Projects</p>
-                        <p class="tab-links active-link" onClick="opentab('Education')">Education</p>
+                        <p class="tab-links" onClick="opentab('Projects')">Projects</p>
+                        <p class="tab-links" onClick="opentab('Education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="Skills">
                         <ul>
@@ -72,7 +75,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-contents active-tab" id="Projects">
+                     <div class="tab-contents" id="Projects">
 
                         <ul>
                             <li><span>Coffee Junkie E-commerce Website</span> <br>Using Html css and js</li>
@@ -81,7 +84,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-contents active-tab" id="Education">
+                    <div class="tab-contents " id="Education">
                         <ul>
                             <li><span>2017-2021 Graduation</span><br> Sri Krishnadevaraya University</li>
                             <li><span> 2015-2017 Board Of Intermediate Education</span><br> Sri Sai Baba National
@@ -193,6 +196,7 @@
             document.getElementById(tabname).classList.add("active-tab")
         }
     </script>
+
     <script>
         var sidemenu = document.getElementById("sidemenu");
 
