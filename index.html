@@ -11,19 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="https://unpkg.com/aos@2.3.1/dist/aos.css">
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    </script>
 
     <title>Sumanth personal Portfolio</title>
 </head>
 
 <body>
-    <div data-aos="fadeup" id="header">
+    <div id="header">
 
         <div class="container">
             <nav class="navbar">
                 <div data-aos="fade-right">
-                <img src="./sel2img.png" class="logo">
+                <img src="./name.jpeg" class="logo">
 
                 </div>
 
@@ -35,7 +33,7 @@
                     <i class="fa-solid fa-xmark" id="icon" onclick="closemenu()" style="color:rgb(252, 235, 138)"></i>
 
                 </ul>
-                <i class="fa-solid fa-bars" id="icon" onclick="openmenu()" style="color:rgb(181, 250, 212)"></i>
+                <i class="fa-solid fa-bars" id="icon" onclick="openmenu()" style="color:rgb(181, 250, 212);margin: right 20px"></i>
 
                 </nav>
                 <hr style="height:1px;border-width:0;color:#242323;background-color:#242323">
@@ -49,7 +47,7 @@
         </div>
     </div>
 <!-- about -->
-    <div id="about">
+    <div id="about" >
         <div class="container">
             <div class="row">
 
@@ -99,7 +97,7 @@
         </div>
     </div>
     <!-- portfolio -->
-    <div id="portfolio">
+    <div id="portfolio"  data-aos="flip-left">
         <div class="subtitle">
             <h1 class="sub-title">My Work</h1>
             <hr style="height:1px;border-width:0;color:#242323;background-color:#242323">
@@ -196,7 +194,10 @@
             document.getElementById(tabname).classList.add("active-tab")
         }
     </script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
     <script>
         var sidemenu = document.getElementById("sidemenu");
 
